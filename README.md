@@ -1,8 +1,8 @@
 # Capstone Project 3: Prediction Saudi Arabia Used Cars Price Using Machine Learning
 Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Science Online Batch 15 (JCDSOL-015)
 Mochamad Aditya Putra
-Link Drive untuk penjelasan PPT: 
-Link Drive untuk PPT:
+Link Drive untuk penjelasan PPT: https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing
+Link Drive untuk PPT: https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing&ouid=115316219821335212082&rtpof=true&sd=true
 Link untuk google collab notebook: https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing
 
 # Data Dictionary
