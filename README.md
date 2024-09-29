@@ -1,9 +1,9 @@
 # Capstone Project 3: Prediction Saudi Arabia Used Cars Price Using Machine Learning
 Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Science Online Batch 15 (JCDSOL-015)
-Mochamad Aditya Putra
-Link Drive untuk penjelasan PPT: https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing
-Link Drive untuk PPT: https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing&ouid=115316219821335212082&rtpof=true&sd=true
-Link untuk google collab notebook: https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing
+- Mochamad Aditya Putra
+- Link Drive untuk penjelasan PPT: https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing
+- Link Drive untuk PPT: https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing&ouid=115316219821335212082&rtpof=true&sd=true
+- Link untuk google collab notebook: https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing
 
 # Data Dictionary
 |kolom | Penjelasan |
@@ -46,6 +46,6 @@ Pertanyaan Kunci:
 Sebelumnya perusahaan sudah membuat rule based model untuk prediksi harga mobil bekas dengan metode Mean Absolute Error dan mendapatkan nilai error sebesar 55230.571 SAR Maka dari itu kita akan membuat model machine learning yang nantinya akan dibandingkan dengan rule based model (non machine learning) untuk mencari tahu model mana yang dapat memprediksi harga mobil bekas secara lebih baik.
 
 Tujuan utama dari analisis ini adalah:
-Mengembangkan model machine learning untuk memprediksi harga mobil bekas berdasarkan fiturnya yang akan dibandingkan dengan model rule based non machine learning.
-Mengidentifikasi fitur terpenting yang mendorong perbedaan harga di pasar mobil bekas.
-Memberikan wawasan yang dapat ditindaklanjuti kepada penjual mobil bekas dan platform seperti syarah.com tentang cara memberi harga kendaraan mereka secara kompetitif.
+- Mengembangkan model machine learning untuk memprediksi harga mobil bekas berdasarkan fiturnya yang akan dibandingkan dengan model rule based non machine learning.
+- Mengidentifikasi fitur terpenting yang mendorong perbedaan harga di pasar mobil bekas.
+- Memberikan wawasan yang dapat ditindaklanjuti kepada penjual mobil bekas dan platform seperti syarah.com tentang cara memberi harga kendaraan mereka secara kompetitif.
