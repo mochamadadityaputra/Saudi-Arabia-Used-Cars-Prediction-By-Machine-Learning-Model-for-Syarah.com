@@ -1,4 +1,4 @@
-# Capstone Project 3: Saudi Arabia Used Cars Prediction By Machine Learning Model
+# Saudi Arabia Used Cars Prediction By Machine Learning Model
 Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Science Online Batch 15 (JCDSOL-015)
 - Mochamad Aditya Putra
 - Link Drive untuk penjelasan PPT: https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing
