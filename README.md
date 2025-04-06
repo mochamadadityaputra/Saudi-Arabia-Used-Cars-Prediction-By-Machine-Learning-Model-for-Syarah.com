@@ -5,6 +5,7 @@ Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Sci
 - Link Drive untuk PPT: https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing&ouid=115316219821335212082&rtpof=true&sd=true
 - Link untuk google collab notebook: https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing
 - Link Dashboard Visualisasi: https://public.tableau.com/app/profile/aditya.putra5948/viz/dashboardsyarah/UsedCarsAvailableDashboard?publish=yes
+- Link Dashboard Visualisasi (Power BI): https://drive.google.com/file/d/1YF5IkmE4Qmxt80h-HjN_EEf0Xvb7oLxD/view?usp=sharing
 
 # Data Dictionary
 |kolom | Penjelasan |
