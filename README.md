@@ -90,8 +90,7 @@ Beberapa hyperparameter kunci dalam XGBoost Regressor:
 - n_estimators=768: Jumlah pohon (weak learners) yang digunakan dalam model. Semakin banyak pohon umumnya akan meningkatkan performa hingga batas tertentu.
 - colsample_bytree=0.5: Menentukan fraksi fitur yang digunakan saat membangun setiap pohon, memperkenalkan elemen randomisasi dan mengurangi overfitting.
 - gamma=1: Mengontrol kompleksitas model. Nilai yang lebih besar menghasilkan model yang lebih sederhana (dengan lebih sedikit pemisahan pada pohon).
-
-Parameter lain seperti subsample, min_child_weight, dan max_leaves juga berperan dalam mengontrol overfitting dan memastikan generalisasi.
+- Parameter lain seperti subsample, min_child_weight, dan max_leaves juga berperan dalam mengontrol overfitting dan memastikan generalisasi.
 
 # Feature Importance
 Berikut merupakan feature (variable dependent) yang mempengaruhi target (price) dari model machine learning yang telah dibuat:
