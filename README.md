@@ -81,7 +81,7 @@ Transformer ini melakukan serangkaian langkah preprocessing pada dataset:
 - RobustScaler: Diterapkan pada Mileage untuk membuat model kurang sensitif terhadap outlier dengan melakukan scaling berdasarkan rentang interkuartil (IQR).
 - Remainder='passthrough': Kolom-kolom yang tidak disebutkan secara eksplisit dalam transformasi akan diteruskan tanpa perubahan.
 
-Model - XGBoost Regressor (XGBRegressor):
+2. Model - XGBoost Regressor (XGBRegressor):
 Setelah preprocessing, model ini menggunakan XGBoost Regressor untuk memprediksi harga mobil. XGBoost adalah metode ensemble yang kuat berbasis gradient boosting, dikenal karena efisiensi dan performanya dalam tugas regresi maupun klasifikasi.
 
 Beberapa hyperparameter kunci dalam XGBoost Regressor:
