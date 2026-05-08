@@ -120,10 +120,10 @@ Compared 8 regression models on the cleaned dataset:
 
 | Model | MAE | RMSE | R² |
 |---|---|---|---|
-| Gradient Boosting | ~13,500 | ~21,000 | ~0.71 |
-| Random Forest | ~13,200 | ~20,500 | ~0.72 |
-| Stacking Regressor | ~13,100 | ~20,200 | ~0.73 |
-| Voting Regressor | ~13,000 | ~20,000 | ~0.73 |
+| Gradient Boosting | 15,551 | 21,399 | 0.68 |
+| Random Forest | 13,162 | 19,673 | 0.73 |
+| Stacking Regressor | 14,439 | 21,356 | 0.68 |
+| Voting Regressor | 14,851 | 21,720 | 0.67 |
 | **XGBoost (pre-tuning)** | **12,874** | **19,454** | **0.741** ✅ |
 
 ### 6. Hyperparameter Tuning
