@@ -1,118 +1,245 @@
-# Saudi Arabia Used Cars Prediction By Machine Learning Model
-Additional Portofolio Capstone Project Modul 3 Purwadhika Job Connector Data Science Online Batch 15 (JCDSOL-015)
-- Mochamad Aditya Putra
-- Link Drive untuk penjelasan PPT: https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing
-- Link Drive untuk PPT: https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing&ouid=115316219821335212082&rtpof=true&sd=true
-- Link untuk google collab notebook: https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing
-- Link Dashboard Visualisasi (Tableau): https://public.tableau.com/app/profile/aditya.putra5948/viz/SyarahDash/Overview?publish=yes
-- Link Dashboard Visualisasi (Power BI): https://drive.google.com/file/d/1YF5IkmE4Qmxt80h-HjN_EEf0Xvb7oLxD/view?usp=sharing
+# 🚗 Used Car Price Prediction for Syarah.com — Saudi Arabia
 
-# Background
-Perkembangan Penjualan Pasar Mobil Bekas di Arab Saudi:
-Pasar mobil bekas di Arab Saudi mengalami pertumbuhan yang signifikan dalam beberapa tahun terakhir. Beberapa faktor pendorong utama termasuk peningkatan kesadaran konsumen tentang nilai mobil bekas, pertumbuhan populasi, dan ketersediaan platform digital yang mempermudah transaksi jual-beli mobil bekas.
-- Peningkatan Permintaan: Seiring dengan pertumbuhan populasi dan urbanisasi, banyak konsumen yang mencari mobil bekas berkualitas sebagai alternatif dari mobil baru. Ini terutama berlaku bagi mereka yang ingin menghemat biaya tetapi tetap mendapatkan mobil dengan performa baik.
-- Platform Online Mempermudah Transaksi: Platform online seperti syarah.com telah memperluas pasar dengan menawarkan berbagai pilihan mobil bekas dengan transparansi harga dan kondisi kendaraan. Hal ini memudahkan pembeli untuk membandingkan harga dan memilih mobil yang sesuai dengan anggaran mereka.
-- Dampak Ekonomi: Selain itu, fluktuasi harga minyak dan reformasi ekonomi yang diterapkan oleh pemerintah dalam Visi 2030 turut berpengaruh pada preferensi konsumen. Banyak konsumen yang beralih ke mobil bekas sebagai pilihan lebih ekonomis dalam situasi ketidakpastian ekonomi.
-- Tren Mobil Listrik dan Hibrida: Ada juga peningkatan minat terhadap mobil bekas dengan teknologi ramah lingkungan, seperti mobil listrik dan hibrida, sejalan dengan inisiatif pemerintah untuk mengurangi emisi karbon di negara tersebut.
+> Building a machine learning regression model to predict used car prices and support transparent, data-driven pricing for one of Saudi Arabia's largest automotive marketplaces.
 
-Dataset ini didapat dari Purwadikha dan mewakili daftar mobil bekas yang dikumpulkan dari platform (syarah.com), dengan atribut terperinci untuk setiap mobil seperti tipe model, wilayah, merek, tahun, ukuran mesin, jarak tempuh, dan harga. Pasar mobil bekas di Arab Saudi sangat kompetitif, dipengaruhi oleh kondisi ekonomi, preferensi konsumen, dan kebijakan pemerintah mengenai impor otomotif dan pajak.
+**Solo Project** | Purwadhika Digital Technology School — JCDSOL-015
+Author: Mochamad Aditya Putra Yudha Kusuma
 
-Gambaran Pasar:
-Arab Saudi merupakan pasar besar untuk mobil baru maupun bekas karena populasi yang besar dan ketergantungan pada mobil sebagai moda transportasi utama. Merek populer seperti Toyota, Kia, GMC, dan merek mewah seperti Land Rover mendominasi pasar. Faktor-faktor yang memengaruhi nilai mobil bekas termasuk reputasi merek, jarak tempuh, kondisi, dan tahun produksi mobil.
-Selain itu, dorongan pemerintah Saudi terhadap Visi 2030, yang bertujuan untuk mendiversifikasi perekonomian, juga mempunyai pengaruh tidak langsung dengan menjadikan kendaraan lebih terjangkau melalui reformasi kebijakan, sehingga mendorong minat terhadap pasar mobil bekas.
+---
 
-# Problem Statement
-Tujuan penelitian kali ini adalah untuk membantu perusahaan untuk memprediksi harga mobil bekas berdasarkan berbagai atribut seperti jenis mobil, merek, ukuran mesin, jarak tempuh, tahun pembuatan, dan wilayah. Sifat pasar mobil bekas yang berfluktuasi dan beragamnya pilihan yang tersedia membuat harga tidak dapat diprediksi. Selain itu, memahami bagaimana berbagai faktor seperti ukuran mesin dan jarak tempuh memengaruhi harga akhir akan memungkinkan strategi penetapan harga yang lebih baik.
+## 📊 Dashboard Preview
 
-Pertanyaan Kunci:
-1. Apa faktor utama yang mempengaruhi harga mobil bekas di Arab Saudi?
-2. Bagaimana cara memprediksi harga mobil bekas secara akurat berdasarkan fitur-fiturnya?
-3. Apakah model machine learning dapat mengalahkan model rule based non machine learning?
+### Power BI
+![Power BI Dashboard](ADD_YOUR_POWERBI_SCREENSHOT_HERE.png)
+*Take a screenshot of your Power BI dashboard and upload it to this repo*
 
-# Goals
-Sebelumnya perusahaan sudah membuat rule based model untuk prediksi harga mobil bekas dengan metode Mean Absolute Error dan mendapatkan nilai error sebesar 55230.571 SAR Maka dari itu kita akan membuat model machine learning yang nantinya akan dibandingkan dengan rule based model (non machine learning) untuk mencari tahu model mana yang dapat memprediksi harga mobil bekas secara lebih baik.
+### Tableau
+![Tableau Dashboard](ADD_YOUR_TABLEAU_SCREENSHOT_HERE.png)
+📎 [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/aditya.putra5948/viz/SyarahDash/Overview?publish=yes)
 
-Tujuan utama dari analisis ini adalah:
-- Mengembangkan model machine learning untuk memprediksi harga mobil bekas berdasarkan fiturnya yang akan dibandingkan dengan model rule based non machine learning.
-- Mengidentifikasi fitur terpenting yang mendorong perbedaan harga di pasar mobil bekas.
-- Memberikan wawasan yang dapat ditindaklanjuti kepada penjual mobil bekas dan platform seperti syarah.com tentang cara memberi harga kendaraan mereka secara kompetitif.
+---
 
-# Analytical Approach
-Analisis dimulai dengan eksplorasi data untuk memahami distribusi variabel dan korelasi antara variabel prediktor dengan harga mobil. Berikut tahapan pendekatan analitis yang dapat diambil:
+## 📋 Table of Contents
 
-1. Data Understanding: informasi data, statistic deskriptif, jumlah missing value, dan distribusi data secara keseluruhan
-2. Data Cleaning: menangani missing values, duplicated values, anomalies, dan outliers.
-3. Exploratory Data Analysis (EDA): Analisis visualisasi untuk memahami pola dan korelasi antar variabel (Q&A based).
-4. Data Preparation, Model Development untuk Machine Learning, Hyperparameter Tuning, Feature Importance, Estimasi Keuntungan, dan Limitasi.
-5. Kesimpulan dan Rekomendasi.
+- [Problem Statement](#problem-statement)
+- [Project Objectives](#project-objectives)
+- [Dataset Overview](#dataset-overview)
+- [Methodology](#methodology)
+- [Model Results](#model-results)
+- [Key Findings & Feature Importance](#key-findings--feature-importance)
+- [Recommendations](#recommendations)
+- [Tech Stack](#tech-stack)
+- [Repository Structure](#repository-structure)
+- [Links](#links)
 
-# Metric Evaluation
-Kita akan menggunakan MAE sebagai metrics dalam menentukan model yang akan dipilih dengan alasan sebagai berikut:
+---
 
-MAE mengukur rata-rata kesalahan dalam satuan yang sama dengan variable target 'Price'. Dalam hal ini, kesalahan rata-rata dihitung dalam satuan Riyals. Ini memberikan interpretasi yang mudah dan jelas karena menunjukkan secara langsung berapa besar rata-rata kesalahan prediksi model dalam memprediksi harga mobil.
-MAE tidak terlalu sensitif terhadap outliers dibandingkan metric seperti RMSE. Ini berarti bahwa jika ada beberapa harga mobil yang sangat ekstrem (mobil mewah dengan harga sangat tinggi), MAE tidak akan memberikan penalti besar terhadap kesalahan pada outliers tersebut.
-MAE memberikan penilaian yang adil terhadap performa model di seluruh rentang harga mobil.
-Karena variable target 'Price' memiliki rentang yang cukup luas, seperti pada dataset yang digunakan, MAE bisa digunakan untuk memberikan ukuran yang relatif netral terhadap keseluruhan performa model.
-Lalu kita juga akan menggunakan MAPE dan R2 sebagai faktor pendukung MAE dan RMSE sebagai perbandingan terhadap MAE.
+## Problem Statement
 
-# Data Dictionary
-|kolom | Penjelasan |
-|----- | ---------- |
-| Type  | Nama mobil bekas|
-| Region| Wilayah tempat mobil bekas ditawarkan untuk dijual|
-| Make| Nama perusahaan pembuat Mobil|
-| Gear_Type  | Ukuran tipe gear mobil bekas |
-| Origin| Asal mobil bekas|
-| Options | Pilihan fitur pada mobil bekas|
-| Year| Tahun pembuatan|
-| Engine_Size | Ukuran mesin mobil bekas|
-| Mileage | Jarak tempuh mobil bekas|
-| Negotiable | Benar jika harga 0, berarti bisa nego|
-| Price| Harga mobil bekas|
+The Saudi Arabian used car market is one of the largest in the Middle East, driven by population growth, urbanisation, and the rise of digital platforms like Syarah.com. However, pricing in this market remains highly inconsistent — the same car can be listed at vastly different prices depending on the seller, region, and timing.
 
-# Machine Learning Model Explanation
-Model yang merupakan pipeline machine learning yang dirancang untuk memprediksi harga mobil bekas berdasarkan dataset. Berikut penjelasan dari komponen-komponen utama dan prosesnya:
-1. ColumnTransformer:
+For a marketplace like Syarah.com, this pricing uncertainty creates friction for both buyers and sellers: buyers struggle to assess fair value, while sellers risk either underpricing their vehicle or losing customers to competitors with more transparent pricing.
 
-Transformer ini melakukan serangkaian langkah preprocessing pada dataset:
-- OneHotEncoder (drop='first'): Variabel kategorikal seperti Gear_Type, Origin, dan Options diubah menjadi fitur biner. Opsi drop='first' mencegah collinearity dengan menghapus kategori pertama dari setiap variabel.
-- BinaryEncoder: Untuk variabel kategorikal dengan banyak nilai unik (Type, Region, Make), digunakan metode binary encoding yang mengonversi variabel tersebut ke dalam format numerik.
-- MinMaxScaler: Diterapkan pada fitur numerik seperti Year, Engine_Size, dan Mileage. Fitur-fitur ini diskalakan dalam rentang 0 hingga 1 agar bisa dibandingkan secara adil.
-- RobustScaler: Diterapkan pada Mileage untuk membuat model kurang sensitif terhadap outlier dengan melakukan scaling berdasarkan rentang interkuartil (IQR).
-- Remainder='passthrough': Kolom-kolom yang tidak disebutkan secara eksplisit dalam transformasi akan diteruskan tanpa perubahan.
+This project builds a machine learning model to predict used car prices based on vehicle attributes, enabling Syarah.com to offer data-driven price recommendations that improve transparency and trust across the platform.
 
-2. Model - XGBoost Regressor (XGBRegressor):
-Setelah preprocessing, model ini menggunakan XGBoost Regressor untuk memprediksi harga mobil. XGBoost adalah metode ensemble yang kuat berbasis gradient boosting, dikenal karena efisiensi dan performanya dalam tugas regresi maupun klasifikasi.
+**Key questions this project answers:**
+1. What are the primary factors that drive used car prices in Saudi Arabia?
+2. Can a machine learning model outperform a rule-based pricing baseline?
+3. How accurately can the model estimate prices across the full range of vehicles listed on the platform?
 
-Beberapa hyperparameter kunci dalam XGBoost Regressor:
-- learning_rate=0.037: Mengontrol seberapa cepat model belajar. Nilai yang lebih rendah berarti pembelajaran yang lebih lambat namun biasanya menghasilkan performa yang lebih baik.
-- max_depth=8: Menentukan kedalaman maksimum setiap pohon dalam model. Pohon yang lebih dalam bisa menangkap pola yang lebih kompleks, tetapi juga berisiko overfitting.
-- n_estimators=768: Jumlah pohon (weak learners) yang digunakan dalam model. Semakin banyak pohon umumnya akan meningkatkan performa hingga batas tertentu.
-- colsample_bytree=0.5: Menentukan fraksi fitur yang digunakan saat membangun setiap pohon, memperkenalkan elemen randomisasi dan mengurangi overfitting.
-- gamma=1: Mengontrol kompleksitas model. Nilai yang lebih besar menghasilkan model yang lebih sederhana (dengan lebih sedikit pemisahan pada pohon).
-- Parameter lain seperti subsample, min_child_weight, dan max_leaves juga berperan dalam mengontrol overfitting dan memastikan generalisasi.
+---
 
-# Feature Importance
-Berikut merupakan feature (variable dependent) yang mempengaruhi target (price) dari model machine learning yang telah dibuat:
-- Engine_Size (minmax):
-Fitur ini memiliki pengaruh terbesar dalam model, yang menunjukkan bahwa ukuran mesin mobil adalah faktor paling signifikan dalam memprediksi harga. Semakin besar ukuran mesin, biasanya mobil cenderung lebih mahal karena berhubungan dengan performa dan kapasitas.
+## Project Objectives
 
-- Make_1 (binary):
-Fitur ini merujuk pada kategori tertentu dari merek mobil (Make_1), yang ternyata berpengaruh cukup tinggi terhadap harga. Biasanya, mobil dengan merek yang lebih terkenal atau berkualitas tinggi memiliki harga yang lebih mahal.
+- Develop a regression model that significantly outperforms the rule-based baseline (MAE: 55,230 SAR)
+- Identify the key pricing drivers through rigorous EDA and feature importance analysis
+- Reduce pricing uncertainty to a practically useful error margin for marketplace decision-making
+- Deliver findings through interactive dashboards for real-time price support
 
-- Year (minmax):
-Tahun pembuatan mobil juga sangat penting dalam menentukan harga. Semakin baru tahun mobil, cenderung harganya lebih tinggi karena teknologi, performa, dan kondisi yang lebih baik.
+---
 
-- Options_Standard (onehot):
-Fitur ini menunjukkan preferensi opsi standar yang juga berpengaruh. Mobil dengan opsi standar yang lebih lengkap atau canggih biasanya dihargai lebih tinggi.
+## Dataset Overview
 
-- Make_3, Make_4, Make_2 (binary):
-Berbagai kategori dari merek mobil (Make_3, Make_4, Make_2) juga memiliki pengaruh signifikan, menunjukkan bahwa merek tertentu selain Make_1 juga menjadi penentu harga.
+| Item | Detail |
+|---|---|
+| Source | Purwadhika (collected from Syarah.com) |
+| Raw records | 5,624 rows |
+| Cleaned records | 3,700 rows (with outliers removed for modeling) |
+| Target variable | `Price` (SAR — Saudi Riyal) |
+| Mean price | 53,074 SAR |
+| Median price | 36,500 SAR |
 
-- Mileage (robust):
-Fitur ini mewakili jarak tempuh mobil (dalam mil), yang mempengaruhi harga secara signifikan. Semakin besar jarak tempuh, biasanya harga mobil akan lebih rendah karena mobil dianggap sudah lebih banyak digunakan.
+### Data Dictionary
 
-Secara keseluruhan, fitur utama yang berhubungan dengan spesifikasi teknis (seperti ukuran mesin, tahun produksi, jarak tempuh) dan Merek mobil (Make) memberikan kontribusi terbesar dalam memprediksi harga mobil bekas dalam model ini.
+| Feature | Description |
+|---|---|
+| `Type` | Car model name |
+| `Region` | Region where the car is listed for sale |
+| `Make` | Car manufacturer / brand |
+| `Gear_Type` | Transmission type |
+| `Origin` | Country of origin |
+| `Options` | Feature package level (Standard, Full, etc.) |
+| `Year` | Year of manufacture |
+| `Engine_Size` | Engine displacement size |
+| `Mileage` | Total distance travelled |
+| `Negotiable` | Whether price is negotiable (True if listed at 0) |
+| `Price` | Listed price in SAR (target variable) |
 
-# Kesimpulan
-Model machine learning dapat memprediksi harga mobil dengan sangat baik dimana hanya memiliki nilai error sebanyak 11134.25 SAR, dengan model memiliki akurasi sebesar 92% dalam memprediksi harga mobil.
+---
+
+## Methodology
+
+### 1. Data Cleaning
+- Handled missing values, duplicates, anomalies, and outliers
+- Divided dataset into two versions: with outliers and without outliers
+- Selected the **without-outliers dataset** for modeling after comparison — showed more robust and generalizable results across 3,700 cleaned records
+
+### 2. Exploratory Data Analysis (EDA)
+- Analyzed price distribution across brands, regions, engine sizes, and years
+- Identified key pricing patterns and correlations with the target variable
+- Visualized market segmentation to understand where price variance is highest
+
+### 3. Baseline Model (Rule-Based)
+- Built a rule-based pricing model as the benchmark
+- Result: **MAE of 55,230 SAR** — established as the target to beat
+
+### 4. Model Comparison
+Compared 8 regression models on the cleaned dataset:
+
+| Model | Notes |
+|---|---|
+| Linear Regression | Baseline ML model |
+| Decision Tree Regressor | High variance, prone to overfitting |
+| KNeighbors Regressor | Moderate performance |
+| Voting Regressor | Ensemble of weak learners |
+| Stacking Regressor | Meta-learner approach |
+| Random Forest Regressor | Strong performance |
+| Gradient Boosting Regressor | Strong performance |
+| **XGBoost Regressor** | **Best performer ✅** |
+
+### 5. Top 5 Model Comparison (Key Metrics)
+
+| Model | MAE | RMSE | R² |
+|---|---|---|---|
+| Gradient Boosting | ~13,500 | ~21,000 | ~0.71 |
+| Random Forest | ~13,200 | ~20,500 | ~0.72 |
+| Stacking Regressor | ~13,100 | ~20,200 | ~0.73 |
+| Voting Regressor | ~13,000 | ~20,000 | ~0.73 |
+| **XGBoost (pre-tuning)** | **12,874** | **19,454** | **0.741** ✅ |
+
+### 6. Hyperparameter Tuning
+Applied **Bayesian Optimization** to XGBoost:
+
+| Metric | Before Tuning | After Tuning | Improvement |
+|---|---|---|---|
+| MAE | 12,874 SAR | **11,134 SAR** | ↓ 13.5% |
+| RMSE | 19,454 SAR | **16,965 SAR** | ↓ 12.8% |
+| R² | 0.741 | **0.803** | ↑ 8.4% |
+| MAPE | 22.36% | **19.34%** | ↓ 3pp |
+
+### 7. Pipeline Architecture
+The final model is a full ML pipeline with the following preprocessing steps:
+
+- **OneHotEncoder** — categorical features with few unique values (Gear_Type, Origin, Options)
+- **BinaryEncoder** — high-cardinality categorical features (Type, Region, Make)
+- **MinMaxScaler** — numerical features (Year, Engine_Size)
+- **RobustScaler** — applied to Mileage to reduce sensitivity to outliers
+- **XGBoost Regressor** — final prediction model with Bayesian-tuned hyperparameters
+
+---
+
+## Model Results
+
+### Final Model Performance (XGBoost — after Bayesian Optimization)
+
+| Metric | Value | Interpretation |
+|---|---|---|
+| MAE | **11,134 SAR** | Average prediction error per vehicle |
+| RMSE | **16,965 SAR** | Error metric sensitive to large deviations |
+| R² | **0.803** | Model explains 80.3% of price variance |
+| MAPE | **19.34%** | Average percentage error across all predictions |
+
+### vs. Rule-Based Baseline
+
+| | Rule-Based Model | XGBoost (tuned) | Improvement |
+|---|---|---|---|
+| MAE | 55,230 SAR | **11,134 SAR** | **↓ 79.8%** |
+
+The machine learning model reduced average pricing error by nearly **80%** compared to the conventional rule-based approach — from 55,230 SAR down to 11,134 SAR per vehicle.
+
+---
+
+## Key Findings & Feature Importance
+
+The top factors driving used car prices in the Saudi market, in order of model importance:
+
+1. **Engine Size** — the single most influential feature. Larger engines consistently command higher prices due to performance associations.
+2. **Brand (Make)** — brand reputation is a major price driver. Premium and well-known brands significantly outprice lesser-known alternatives.
+3. **Year of Manufacture** — newer cars price higher. Depreciation curves vary significantly by brand.
+4. **Options Package** — cars with Standard options price noticeably lower than Full or Semi-Full packages.
+5. **Mileage** — higher mileage reduces price, though the relationship is non-linear and brand-dependent.
+
+**Key EDA insights:**
+- Toyota, Kia, and GMC dominate the listing volume on Syarah.com
+- Luxury brands (Land Rover, BMW, Mercedes) show the highest price variance — harder to predict accurately
+- Region of listing has moderate influence — Riyadh and Jeddah listings tend to price slightly higher
+- Negotiable listings (price = 0) were excluded as they represent incomplete data
+
+---
+
+## Recommendations
+
+**For Syarah.com platform:**
+- Deploy the model as a real-time price suggestion tool at the listing creation stage — sellers input specs, model returns a suggested price range (±11,134 SAR)
+- Flag listings priced more than 2× the model's prediction for manual review — likely data entry errors or fraudulent listings
+- Use feature importance insights to prompt sellers for the most price-relevant information first (engine size, brand, year, options)
+
+**For pricing strategy:**
+- Luxury segment (BMW, Land Rover, Mercedes) has the highest prediction error — consider a separate model or confidence interval for this segment
+- Mileage-based discounting could be more systematically applied — data shows buyers respond predictably to mileage brackets
+- Regional pricing differences suggest Syarah.com could introduce location-adjusted price recommendations
+
+---
+
+## Tech Stack
+
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Data Manipulation | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn, XGBoost |
+| Encoding | Category Encoders (BinaryEncoder) |
+| Hyperparameter Tuning | Bayesian Optimization (Scikit-Optimize / Optuna) |
+| BI & Dashboards | Power BI, Tableau |
+| Model Saving | Pickle (.pkl) |
+| Environment | Google Colab |
+| Version Control | GitHub |
+
+---
+
+## Repository Structure
+
+```
+Saudi-Arabia-Used-Cars-Prediction/
+│
+├── Capstone_Project_Module_3.ipynb   # Main notebook
+├── Capstone Project 3.pptx           # Project presentation
+├── Syarah Dashboard PowerBI.pbix     # Power BI dashboard file
+├── dashboard syarah.twb              # Tableau dashboard file
+├── data_saudi_used_cars.csv          # Raw dataset
+├── model.pkl                         # Saved tuned XGBoost model
+└── README.md
+```
+
+---
+
+## 🔗 Links
+
+| Resource | Link |
+|---|---|
+| 📓 Notebook (Google Colab) | [Open Notebook](https://colab.research.google.com/drive/1RdpwL3b7nLN0UdwjHc1Bz6HkI11PRGq8?usp=sharing) |
+| 📊 Power BI Dashboard | [View on Google Drive](https://drive.google.com/file/d/1YF5IkmE4Qmxt80h-HjN_EEf0Xvb7oLxD/view?usp=sharing) |
+| 📈 Tableau Dashboard | [View on Tableau Public](https://public.tableau.com/app/profile/aditya.putra5948/viz/SyarahDash/Overview?publish=yes) |
+| 🎤 Presentation (Video) | [Watch on Google Drive](https://drive.google.com/file/d/1ahSQW5Xpmf2x7eKzUYjKpu9ureNFBos4/view?usp=sharing) |
+| 📑 Presentation (Slides) | [Open Slides](https://docs.google.com/presentation/d/1s94GgoHzMH4fj8A6eUXuosuQX68TXjr-/edit?usp=sharing) |
