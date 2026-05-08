@@ -13,7 +13,7 @@ Author: Mochamad Aditya Putra Yudha Kusuma
 ![Power BI Dashboard](PowerBI_Dash_screenshot.jpg)
 
 ### Tableau
-![Tableau Dashboard](ADD_YOUR_TABLEAU_SCREENSHOT_HERE.png)
+![Tableau Dashboard](Tableau_dash_overview.jpg)
 📎 [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/aditya.putra5948/viz/SyarahDash/Overview?publish=yes)
 
 ---
