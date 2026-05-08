@@ -135,7 +135,7 @@ Applied **Bayesian Optimization** to XGBoost:
 | MAE | 12,874 SAR | **11,134 SAR** | ↓ 13.5% |
 | RMSE | 19,454 SAR | **16,965 SAR** | ↓ 12.8% |
 | R² | 0.741 | **0.803** | ↑ 8.4% |
-| MAPE | 22.36% | **19.34%** | ↓ 3pp |
+| MAPE | 22.36% | **19.34%** | ↓ 3.02% |
 
 ### 7. Pipeline Architecture
 The final model is a full ML pipeline with the following preprocessing steps:
